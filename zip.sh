@@ -5,8 +5,8 @@ ZIP_URL="https://github.com/kcepu877/ben/releases/download/ppob/mio_update_07062
 ZIP_FILE="mio_update.zip"
 EXTRACT_DIR="izinvps"
 GITHUB_USERNAME="kcepu877"
-GITHUB_TOKEN="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"  # Ganti dengan token kamu
-REPO_NAME="mio_update"
+GITHUB_TOKEN="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"  # Ganti dengan token kamu
+REPO_NAME="izinvps"
 REPO_URL="https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com/$GITHUB_USERNAME/$REPO_NAME.git"
 
 # === CEK DEPENDENSI ===
