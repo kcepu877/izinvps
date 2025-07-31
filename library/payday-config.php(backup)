@@ -1,0 +1,81 @@
+<?php
+
+class PaydayConfigClass {
+    private $key = '263a29b84ead800';
+    public function game($name, $server = null, $idGame) {
+        $curl = curl_init();
+
+        $base_url = 'https://payday.my.id/trueid/game/'. $name. '/?id='. $idGame. '&key='. $this->key;
+        if (isset($server)) {
+            $base_url .= '&server='. $server;
+        }
+
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => $base_url,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+        ));
+        
+        $response = curl_exec($curl);
+        $data = json_decode($response);
+        return $data;
+    }
+    
+    public function ewallet($name, $number) {
+        $curl = curl_init();
+
+        $base_url = 'https://payday.my.id/trueid/ewallet/'. $name. '/?hp='. $number. '&key='. $this->key;
+
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => $base_url,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+        ));
+        
+        $response = curl_exec($curl);
+        $data = json_decode($response);
+        return $data;
+    }
+    
+    public function pln($number) {
+        $curl = curl_init();
+
+        $base_url = 'https://payday.my.id/trueid/bill/pln/?no='. $number. '&key='. $this->key;
+
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => $base_url,
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'GET',
+        ));
+        
+        $response = curl_exec($curl);
+        $data = json_decode($response);
+        return $data;
+    }
+}
+
+$PaydayConfig = new PaydayConfigClass;
+
+// $test = $PaydayConfig->game('freefire', null, '4657889071');
+// print_r($test->nickname);
+
+// $test = $PaydayConfig->ewallet('dana', '082299265151');
+// print_r($test->name);
+
+// $test = $PaydayConfig->pln('86267158474');
+// print_r($test->name);

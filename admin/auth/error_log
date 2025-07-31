@@ -1,0 +1,25 @@
+[22-May-2025 00:32:54 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/library/customfunction.php on line 8
+[22-May-2025 00:32:54 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/library/customfunction.php on line 8
+[22-May-2025 00:32:54 Asia/Jakarta] PHP Warning:  file_get_contents(cookies_bca.txt): failed to open stream: No such file or directory in /home/lapm7811/public_html/miopay.site/admin/library/function/class.bca.php on line 11
+[22-May-2025 00:32:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/library/customfunction.php on line 8
+[22-May-2025 00:32:59 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/library/customfunction.php on line 8
+[22-May-2025 00:32:59 Asia/Jakarta] PHP Warning:  file_get_contents(cookies_bca.txt): failed to open stream: No such file or directory in /home/lapm7811/public_html/miopay.site/admin/library/function/class.bca.php on line 11
+[22-May-2025 00:32:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function check_input() in /home/lapm7811/public_html/miopay.site/admin/auth/login.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 8
+[22-May-2025 00:33:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function check_empty() in /home/lapm7811/public_html/miopay.site/admin/auth/login.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 15
+[22-May-2025 00:34:14 Asia/Jakarta] PHP Notice:  Undefined variable: cookie_time in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 24
+[22-May-2025 00:34:14 Asia/Jakarta] PHP Notice:  Undefined variable: ShennCookie in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 25
+[22-May-2025 00:34:14 Asia/Jakarta] PHP Notice:  Undefined variable: cookie_time in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 25
+[22-May-2025 01:43:32 Asia/Jakarta] PHP Notice:  Undefined index: user in /home/lapm7811/public_html/miopay.site/admin/auth/logout.php on line 4
+[22-May-2025 01:43:32 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/auth/logout.php on line 4
+[22-May-2025 01:43:32 Asia/Jakarta] PHP Notice:  Undefined index: user in /home/lapm7811/public_html/miopay.site/admin/auth/logout.php on line 9
+[22-May-2025 01:43:32 Asia/Jakarta] PHP Notice:  Trying to access array offset on value of type null in /home/lapm7811/public_html/miopay.site/admin/auth/logout.php on line 9
+[22-May-2025 01:43:32 Asia/Jakarta] PHP Notice:  Undefined index: token in /home/lapm7811/public_html/miopay.site/admin/auth/logout.php on line 29
+[22-May-2025 01:43:38 Asia/Jakarta] PHP Notice:  Undefined variable: cookie_time in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 24
+[22-May-2025 01:43:38 Asia/Jakarta] PHP Notice:  Undefined variable: ShennCookie in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 25
+[22-May-2025 01:43:38 Asia/Jakarta] PHP Notice:  Undefined variable: cookie_time in /home/lapm7811/public_html/miopay.site/admin/auth/login.php on line 25
