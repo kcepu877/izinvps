@@ -38,5 +38,20 @@ git commit -m "Initial commit dari ZIP"
 git branch -M main
 git push -u origin main
 
+cd "$EXTRACT_DIR" || exit
+echo "🔧 Inisialisasi Git dan push ke GitHub..."
+
+git init
+
+# Set nama dan email Git
+git config user.name "kcepu877"
+git config user.email "kcepu877@gmail.com"
+
+git remote add origin "$REPO_URL"
+git add .
+git commit -m "Initial commit dari ZIP"
+git branch -M main
+git push -u origin main
+
 echo "✅ Selesai! Semua file telah di-push ke GitHub."
 
